@@ -1,0 +1,229 @@
+html, body {
+    scroll-behavior: smooth;
+    background-color: #71b9b8;   
+}
+div#clubs {
+    margin-bottom: 20px;
+}
+#information {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#welcomeMessage {
+    height: 50vh;
+    width: 100%;
+    transform: translateY(50%);
+}
+/* Hide Elements Except Login on First Load */
+#navigation, #main, #footer, #teatro, #iheart, #peer, #teatro_desc, #iheart_desc, #peer_desc {
+    display: none;
+}
+
+#maces, #maces_desc, #uapsa, #uapsa_desc, #jpsme, #jpsme_desc, #jpice, #jpice_desc, #jpiche, #jpiche_desc {
+    display: none;
+}
+
+#jieep, #jieep_desc, #jiiee, #jiiee_desc, #jpiie, #jpiie_desc, #jpiche, #jpiche_desc, #css, #css_desc, #cas, #cas_desc, #atycb, #atycb_desc {
+    display: none;
+}
+
+/*  Typewriting Effect */
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .15em;  */
+    /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
+div#content {
+    background-color: #71b9b8;     
+    /* background: linear-gradient(to bottom, #020111 60%,#20202c 100%);  */
+}
+div#image {
+    /* width: 100px;
+    max-width: 200px; */
+    background-image: url("../images/fair.jpg");
+    overflow-y: hidden;
+    background-size: 100% 100%;
+    object-fit: cover;       
+    background-position: center;
+    background-repeat: no-repeat;    
+    /* background-attachment: fixed;     */
+    /* position: relative; */
+    /* width: 100%; */
+}
+img#logo {
+    height: 70px;
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    line-height: 40px; 
+}
+span#userCount, span#credits {
+    color: black;
+}
+footer.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+
+/* Media Queries */
+/* Desktop Version */
+@media (min-width: 992px) {
+    div#image {
+        height: 100vh;
+    }
+}
+
+/* Tablet Version */
+@media (min-width: 768px) and (max-width: 991px) {
+    div#image {
+        height: 75vh;
+    }
+}
+
+
+/* Mobile Version */
+@media (max-width: 767px) {
+    div#image {
+        
+        height: 50vh;
+    }
+}
+
+/* Animation */
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+
+#formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 25px 25px 25px 25px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+#formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.loginArea {
+    margin: 25px;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+  
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+  
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+  
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+.fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+  
+.fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+  
+.fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+  
+.fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+  
+.fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
