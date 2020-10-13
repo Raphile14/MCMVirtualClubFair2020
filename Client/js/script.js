@@ -4,12 +4,12 @@ socket.on('connectedUsers', (data) => {
     $("#usersConnected").text(data.number);
 });
 
-$("#welcomeMessage").one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", ()=> {
-    $("#welcomeMessage").css("display", "none");
-    $("#navigation").css("display", "block");
-    $("#main").css("display", "block");
-    $("#footer").css("display", "block");
-})
+// $("#welcomeMessage").one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", ()=> {
+//     $("#welcomeMessage").css("display", "none");
+//     $("#navigation").css("display", "block");
+//     $("#main").css("display", "block");
+//     $("#footer").css("display", "block");
+// })
 
 // Club Buttons
 $("#button_dance").click(()=>{
