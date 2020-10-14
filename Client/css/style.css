@@ -22,6 +22,9 @@ h1 {
     /* font-family: 'Lobster', cursive;   */
     color: #B86F71;  
 }
+h2 {
+    font-size: 20px;
+}
 .jumbotron {
     background-color: #ffffff;
 }
@@ -192,9 +195,13 @@ footer.container {
     div#image {        
         height: 35vh;
     }
-    h1#welcome {
-        font-size: 20px;
+    h1 {
+        text-shadow: 0.5px 0.5px black;
+        font-size: 30px;
     }
+    h1#welcome {
+        font-size: 16px;
+    }       
     img#icon {
         height: 30px;
     }
@@ -202,13 +209,16 @@ footer.container {
         height: 50vh;
         width: 100%;
         transform: translateY(20%);
-    }
-    h1 {
-        text-shadow: 0.5px 0.5px black;
-    }
+    }    
     .col-md-12, .col-lg-6 {
         padding-left: 0px;
         padding-right: 0px;
+    }
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 2rem 1rem;
     }
 }
 
