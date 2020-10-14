@@ -3,10 +3,10 @@ html, body {
     background-color: #71b9b8;   
     overflow-x: hidden;
 }
-/* div#clubs {
-    background-color: red;
+div#clubs, div#organizations {
+    border-radius: 30px;
 }
-div#organizations {
+ /* {
     background-color: black;
 } */
 main#inside {
@@ -19,7 +19,11 @@ div.video {
 }
 h1 {
     font-size: 50px;
-    font-family: 'Lobster', cursive;    
+    font-family: 'Lobster', cursive;  
+    color: #B86F71;  
+}
+.jumbotron {
+    background-color: #ffffff;
 }
 .buttons {
     white-space: nowrap;
@@ -34,9 +38,10 @@ h1 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#welcomeMessage {
+h1#welcome {
     height: 50vh;
     width: 100%;    
+    color: #B8B76F;
 }
 
 /* Hide Elements Except Login on First Load */
@@ -64,14 +69,9 @@ h1 {
 
 /*  Typewriting Effect */
 .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: .15em solid orange;  */
-    /* The typwriter cursor */
+    overflow: hidden;
     white-space: nowrap; 
-    /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    /* letter-spacing: .15em;  */
-    /* Adjust as needed */
+    margin: 0 auto;
     animation: 
       typing 5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -91,11 +91,8 @@ h1 {
 
 div#content {
     background-color: #71b9b8;
-    /* background: linear-gradient(to bottom, #020111 60%,#20202c 100%);  */
 }
-div#image {
-    /* width: 100px;
-    max-width: 200px; */
+div#image {    
     background-image: url("../images/fair.jpg");    
     overflow-y: hidden;
     background-size: 100% 100%;
@@ -153,8 +150,11 @@ footer.container {
         transform: translateY(50%);
     }
     h1 {
-        text-shadow: 1px 1px #ff4000;
+        text-shadow: 2px 2px black;
     }
+    h1#welcome {
+        text-shadow: 2.5px 2.5px black;
+    }    
     .col-lg-6 {
         max-width: 100%;
     }
@@ -177,7 +177,7 @@ footer.container {
         transform: translateY(45%);
     }
     h1 {
-        text-shadow: 1px 1px #ff4000;
+        text-shadow: 1px 1px black;
     }
 }
 
@@ -199,7 +199,7 @@ footer.container {
         transform: translateY(35%);
     }
     h1 {
-        text-shadow: 0.5px 0.5px #ff4000;
+        text-shadow: 0.5px 0.5px black;
     }
     .col-md-12, .col-lg-6 {
         padding-left: 0px;

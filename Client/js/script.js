@@ -29,6 +29,24 @@ $("#club_right").click(() => {
     clubShow();    
 });
 
+// Nav Buttons Clubs
+$("#dance_company_logo_button").click(() => {
+    onClubClick(1);
+});
+$("#teatro_logo_button").click(() => {
+    onClubClick(2);
+});
+$("#iheart_logo_button").click(() => {
+    onClubClick(3);
+});
+$("#peer_logo_button").click(() => {
+    onClubClick(4);
+});
+function onClubClick(number) {
+    clubIndex = number;
+    clubShow();
+}
+
 function clubShow() {
     $("#dance_company").css("display", "none");
     $("#dance_company_logo").css("display", "none");
@@ -75,6 +93,49 @@ $("#org_right").click(() => {
     }
     orgShow();    
 });
+
+// Navigation on Org
+$("#ceaso_logo_button").click(()=>{
+    onOrgClick(1);
+});
+$("#maces_logo_button").click(()=>{
+    onOrgClick(2);
+});
+$("#uapsa_logo_button").click(()=>{
+    onOrgClick(3);
+});
+$("#jpsme_logo_button").click(()=>{
+    onOrgClick(4);
+});
+$("#jpice_logo_button").click(()=>{
+    onOrgClick(5);
+});
+$("#jpiche_logo_button").click(()=>{
+    onOrgClick(6);
+});
+$("#jieep_logo_button").click(()=>{
+    onOrgClick(7);
+});
+$("#jiiee_logo_button").click(()=>{
+    onOrgClick(8);
+});
+$("#jpiie_logo_button").click(()=>{
+    onOrgClick(9);
+});
+$("#css_logo_button").click(()=>{
+    onOrgClick(10);
+});
+$("#cas_logo_button").click(()=>{
+    onOrgClick(11);
+});
+$("#atycb_logo_button").click(()=>{
+    onOrgClick(12);
+});
+
+function onOrgClick(number) {
+    orgIndex = number;
+    orgShow();
+}
 
 function orgShow() {
     $("#ceaso").css("display", "none");
@@ -219,34 +280,3 @@ $("#button_cas").click(()=>{
 $("#button_atycb").click(()=>{
     orgShow("atycb", "atycb_desc");
 });
-
-// function orgShow(name, desc) {
-//     $("#ceaso").css("display", "none");
-//     $("#ceaso_desc").css("display", "none");
-//     $("#maces").css("display", "none");    
-//     $("#maces_desc").css("display", "none");
-//     $("#uapsa").css("display", "none");
-//     $("#uapsa_desc").css("display", "none");
-//     $("#jpsme").css("display", "none");
-//     $("#jpsme_desc").css("display", "none");
-//     $("#jpice").css("display", "none");
-//     $("#jpice_desc").css("display", "none");
-//     $("#jpiche").css("display", "none");
-//     $("#jpiche_desc").css("display", "none");
-//     $("#jiiee").css("display", "none");
-//     $("#jiiee_desc").css("display", "none");
-//     $("#jieep").css("display", "none");
-//     $("#jieep_desc").css("display", "none");
-//     $("#jpiie").css("display", "none");
-//     $("#jpiie_desc").css("display", "none");
-//     $("#jpiche").css("display", "none");
-//     $("#jpiche_desc").css("display", "none");
-//     $("#css").css("display", "none");
-//     $("#css_desc").css("display", "none");
-//     $("#cas").css("display", "none");
-//     $("#cas_desc").css("display", "none");
-//     $("#atycb").css("display", "none");
-//     $("#atycb_desc").css("display", "none");
-//     $("#" + name).css("display", "block");
-//     $("#" + desc).css("display", "block");
-// }
