@@ -76,8 +76,12 @@ div#image {
     /* position: relative; */
     /* width: 100%; */
 }
-img#logo {
+img#icon {
     height: 70px;
+}
+
+img#logo {
+    height: 150px;
 }
 .footer {
     position: relative;
