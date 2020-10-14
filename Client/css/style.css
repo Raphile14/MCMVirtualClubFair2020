@@ -41,9 +41,9 @@ h2 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-h1#welcome {
-    height: 50vh;
-    width: 100%;    
+h1.welcome {
+    /* height: 50vh;
+    width: 100%;     */
     color: #B8B76F;
 }
 
@@ -70,26 +70,42 @@ h1#welcome {
     display: none;
 }
 
-/*  Typewriting Effect */
-.typewriter h1 {
-    overflow: hidden;
-    white-space: nowrap; 
-    margin: 0 auto;
-    animation: 
-      typing 5s steps(40, end),
-      blink-caret .75s step-end infinite;
+/* NEW */
+.output {
+    text-align:center;
+    color:#B8B76F;
 }
-  
-  /* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+.cursor::after {
+    content:'';
+    display:inline-block;
+    margin-left:3px;
+    background-color:black;
+    animation-name:blink;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
 }
-  
-  /* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: black; }
+h1.cursor::after {
+    height:24px;
+    width:13px;
+}
+h3.cursor::after {
+    height:13px;
+    width:6px;
+}
+
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    49% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
 }
 
 div#content {
@@ -146,7 +162,7 @@ footer.container {
     div#image {
         height: 100vh;
     }
-    h1#welcome {
+    h1.welcome {
         font-size: 50px;
     }
     img#icon {
@@ -155,13 +171,13 @@ footer.container {
     #welcomeMessage {
         height: 50vh;
         width: 100%;
-        transform: translateY(120%);
+        transform: translateY(110%);
     }
     h1 {
         text-shadow: 2px 2px black;
     }
-    h1#welcome {
-        text-shadow: 2.5px 2.5px black;
+    h1.welcome,h3 {
+        text-shadow: 2px 2px black;
     }    
     .col-lg-6 {
         max-width: 100%;
@@ -173,8 +189,8 @@ footer.container {
     div#image {
         height: 75vh;
     }
-    h1#welcome {
-        font-size: 30px;
+    h1.welcome {
+        font-size: 50px;
     }
     img#icon {
         height: 50px;
@@ -182,10 +198,13 @@ footer.container {
     #welcomeMessage {
         height: 50vh;
         width: 100%;
-        transform: translateY(90%);
+        transform: translateY(80%);
     }
-    h1 {
-        text-shadow: 1px 1px black;
+    h1, h3 {
+        text-shadow: 1.5px 1.5px black;
+    }
+    h3 {
+        font-size: 25px;
     }
 }
 
@@ -199,16 +218,21 @@ footer.container {
         text-shadow: 0.5px 0.5px black;
         font-size: 30px;
     }
-    h1#welcome {
-        font-size: 16px;
+    h1.welcome {
+        font-size: 35px;
+        text-shadow: 1px 1px black;
     }       
+    h3 {
+        font-size: 20px;
+        text-shadow: 1px 1px black;
+    }
     img#icon {
         height: 30px;
     }
     #welcomeMessage {
         height: 50vh;
         width: 100%;
-        transform: translateY(45%);
+        transform: translateY(25%);
     }    
     .col-md-12, .col-lg-6 {
         padding-left: 0px;
