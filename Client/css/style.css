@@ -19,17 +19,12 @@ div.video {
 }
 h1 {
     font-size: 50px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive;    
 }
 .buttons {
     white-space: nowrap;
 }
 .btn-circle {
-    /* width: 60px;
-    height: 60px;    
-    padding: 6px 0;
-    font-size: 30px;
-    line-height: 1.428571429; */
     text-align: center;
     border-radius: 50px;
     background-color: transparent;
@@ -41,13 +36,10 @@ h1 {
 }
 #welcomeMessage {
     height: 50vh;
-    width: 100%;
-    transform: translateY(50%);
+    width: 100%;    
 }
+
 /* Hide Elements Except Login on First Load */
-/* #navigation, #main, #footer,  */
-
-
 /* Logos */
 /* Clubs */
 #iheart_logo, #peer_logo, #teatro_logo {
@@ -98,7 +90,7 @@ h1 {
 }
 
 div#content {
-    background-color: #71b9b8;     
+    background-color: #71b9b8;
     /* background: linear-gradient(to bottom, #020111 60%,#20202c 100%);  */
 }
 div#image {
@@ -121,6 +113,12 @@ div.scroll {
 }
 img.logo {
     height: 100px;
+}
+hr.style1{
+    border-top: 1.5px dashed #8c8b8b;
+	border-bottom: 1.5px dashed #fff;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .footer {
     position: relative;
@@ -149,6 +147,17 @@ footer.container {
     img#icon {
         height: 70px;
     }
+    #welcomeMessage {
+        height: 50vh;
+        width: 100%;
+        transform: translateY(50%);
+    }
+    h1 {
+        text-shadow: 1px 1px #ff4000;
+    }
+    .col-lg-6 {
+        max-width: 100%;
+    }
 }
 
 /* Tablet Version */
@@ -161,6 +170,14 @@ footer.container {
     }
     img#icon {
         height: 50px;
+    }
+    #welcomeMessage {
+        height: 50vh;
+        width: 100%;
+        transform: translateY(45%);
+    }
+    h1 {
+        text-shadow: 1px 1px #ff4000;
     }
 }
 
@@ -175,6 +192,18 @@ footer.container {
     }
     img#icon {
         height: 30px;
+    }
+    #welcomeMessage {
+        height: 50vh;
+        width: 100%;
+        transform: translateY(35%);
+    }
+    h1 {
+        text-shadow: 0.5px 0.5px #ff4000;
+    }
+    .col-md-12, .col-lg-6 {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
