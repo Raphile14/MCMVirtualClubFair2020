@@ -6,6 +6,7 @@ div#clubs {
     margin-bottom: 20px;
 }
 h1 {
+    font-size: 50px;
     font-family: 'Lobster', cursive;
 }
 #information {
@@ -104,6 +105,9 @@ footer.container {
     div#image {
         height: 100vh;
     }
+    h1 {
+        font-size: 50px;
+    }
 }
 
 /* Tablet Version */
@@ -111,14 +115,19 @@ footer.container {
     div#image {
         height: 75vh;
     }
+    h1 {
+        font-size: 30px;
+    }
 }
 
 
 /* Mobile Version */
 @media (max-width: 767px) {
-    div#image {
-        
+    div#image {        
         height: 50vh;
+    }
+    h1 {
+        font-size: 16px;
     }
 }
 
