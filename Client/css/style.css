@@ -3,12 +3,37 @@ html, body {
     background-color: #71b9b8;   
     overflow-x: hidden;
 }
-div#clubs {
-    margin-bottom: 20px;
+/* div#clubs {
+    background-color: red;
+}
+div#organizations {
+    background-color: black;
+} */
+main#inside {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+div.video {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 h1 {
     font-size: 50px;
     font-family: 'Lobster', cursive;
+}
+.buttons {
+    white-space: nowrap;
+}
+.btn-circle {
+    /* width: 60px;
+    height: 60px;    
+    padding: 6px 0;
+    font-size: 30px;
+    line-height: 1.428571429; */
+    text-align: center;
+    border-radius: 50px;
+    background-color: transparent;
+    color: black;
 }
 #information {
     margin-top: 50px;
@@ -19,22 +44,29 @@ h1 {
     width: 100%;
     transform: translateY(50%);
 }
-div#content {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 /* Hide Elements Except Login on First Load */
 /* #navigation, #main, #footer,  */
 
-#teatro, #iheart, #peer, #teatro_desc, #iheart_desc, #peer_desc {
+
+/* Logos */
+/* Clubs */
+#iheart_logo, #peer_logo, #teatro_logo {
+    display: none;
+}
+/* Descriptions */
+#teatro, #iheart, #peer {
     display: none;
 }
 
-#maces, #maces_desc, #uapsa, #uapsa_desc, #jpsme, #jpsme_desc, #jpice, #jpice_desc, #jpiche, #jpiche_desc {
+/* Orgs */
+/* Logos */
+
+/* Descriptions */
+#maces, #uapsa, #jpsme, #jpice, #jpiche, #jieep, #jiiee, #jpiie, #css, #cas, #atycb {
     display: none;
 }
 
-#jieep, #jieep_desc, #jiiee, #jiiee_desc, #jpiie, #jpiie_desc, #jpiche, #jpiche_desc, #css, #css_desc, #cas, #cas_desc, #atycb, #atycb_desc {
+#maces_logo, #uapsa_logo, #jpsme_logo, #jpice_logo, #jpiche_logo, #jieep_logo, #jiiee_logo, #jpiie_logo, #css_logo, #cas_logo, #atycb_logo {
     display: none;
 }
 
@@ -72,7 +104,7 @@ div#content {
 div#image {
     /* width: 100px;
     max-width: 200px; */
-    background-image: url("../images/fair.jpg");
+    background-image: url("../images/fair.jpg");    
     overflow-y: hidden;
     background-size: 100% 100%;
     object-fit: cover;       
@@ -82,9 +114,13 @@ div#image {
     /* position: relative; */
     /* width: 100%; */
 }
-
-img#logo {
-    height: 150px;
+div.scroll {
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;    
+}
+img.logo {
+    height: 100px;
 }
 .footer {
     position: relative;
