@@ -111,6 +111,11 @@ div.scroll {
 img.logo {
     height: 100px;
 }
+img.logob {
+    max-height: 100px;
+    max-width: 100px;
+    transform: translateY(-50%);
+}
 hr.style1{
     border-top: 1.5px dashed #8c8b8b;
 	border-bottom: 1.5px dashed #fff;
