@@ -19,7 +19,7 @@ div.video {
 }
 h1 {
     font-size: 50px;
-    font-family: 'Lobster', cursive;  
+    /* font-family: 'Lobster', cursive;   */
     color: #B86F71;  
 }
 .jumbotron {
@@ -190,10 +190,10 @@ footer.container {
 /* Mobile Version */
 @media (max-width: 767px) {
     div#image {        
-        height: 50vh;
+        height: 35vh;
     }
     h1#welcome {
-        font-size: 16px;
+        font-size: 20px;
     }
     img#icon {
         height: 30px;
@@ -201,7 +201,7 @@ footer.container {
     #welcomeMessage {
         height: 50vh;
         width: 100%;
-        transform: translateY(35%);
+        transform: translateY(20%);
     }
     h1 {
         text-shadow: 0.5px 0.5px black;
