@@ -155,7 +155,7 @@ footer.container {
     #welcomeMessage {
         height: 50vh;
         width: 100%;
-        transform: translateY(50%);
+        transform: translateY(120%);
     }
     h1 {
         text-shadow: 2px 2px black;
@@ -182,7 +182,7 @@ footer.container {
     #welcomeMessage {
         height: 50vh;
         width: 100%;
-        transform: translateY(45%);
+        transform: translateY(90%);
     }
     h1 {
         text-shadow: 1px 1px black;
@@ -208,7 +208,7 @@ footer.container {
     #welcomeMessage {
         height: 50vh;
         width: 100%;
-        transform: translateY(20%);
+        transform: translateY(45%);
     }    
     .col-md-12, .col-lg-6 {
         padding-left: 0px;
