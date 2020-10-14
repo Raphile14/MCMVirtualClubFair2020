@@ -1,6 +1,7 @@
 html, body {
     scroll-behavior: smooth;
     background-color: #71b9b8;   
+    overflow-x: hidden;
 }
 div#clubs {
     margin-bottom: 20px;
@@ -17,6 +18,10 @@ h1 {
     height: 50vh;
     width: 100%;
     transform: translateY(50%);
+}
+div#content {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 /* Hide Elements Except Login on First Load */
 /* #navigation, #main, #footer,  */
@@ -102,7 +107,7 @@ footer.container {
     div#image {
         height: 100vh;
     }
-    h1 {
+    h1#welcome {
         font-size: 50px;
     }
     img#icon {
@@ -115,7 +120,7 @@ footer.container {
     div#image {
         height: 75vh;
     }
-    h1 {
+    h1#welcome {
         font-size: 30px;
     }
     img#icon {
@@ -129,7 +134,7 @@ footer.container {
     div#image {        
         height: 50vh;
     }
-    h1 {
+    h1#welcome {
         font-size: 16px;
     }
     img#icon {
