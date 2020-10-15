@@ -2,6 +2,9 @@
 A frontend and backend project for the MCM Virtual Club Fair 2020
 
 # Changelog
+indev 2.2.2 (10/15/2020)
+- Added More AVPs and Logos
+
 indev 2.2.1 (10/14/2020)
 - Bug fixes 
 
