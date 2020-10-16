@@ -50,11 +50,11 @@ h1.welcome {
 /* Hide Elements Except Login on First Load */
 /* Logos */
 /* Clubs */
-#iheart_logo, #peer_logo, #teatro_logo {
+#iheart_logo, #peer_logo, #teatro_logo, #rcy_logo {
     display: none;
 }
 /* Descriptions */
-#teatro, #iheart, #peer {
+#teatro, #iheart, #peer, #rcy {
     display: none;
 }
 

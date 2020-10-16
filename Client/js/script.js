@@ -5,7 +5,7 @@ socket.on('connectedUsers', (data) => {
 });
 
 let clubIndex = 1;
-let clubMax = 5;
+let clubMax = 6;
 let orgIndex = 1;
 let orgMax = 11;
 
@@ -45,6 +45,9 @@ $("#peer_logo_button").click(() => {
 $("#atycb_logo_button").click(()=>{
     onClubClick(5);
 });
+$("#rcy_logo_button").click(()=>{
+    onClubClick(6);
+});
 function onClubClick(number) {
     clubIndex = number;
     clubShow();
@@ -61,6 +64,8 @@ function clubShow() {
     $("#peer_logo").css("display", "none");
     $("#atycb").css("display", "none");
     $("#atycb_logo").css("display", "none");
+    $("#rcy").css("display", "none");
+    $("#rcy_logo").css("display", "none");
     if (clubIndex == 1) {
         $("#dance_company").css("display", "block");
         $("#dance_company_logo").css("display", "block");
@@ -80,6 +85,10 @@ function clubShow() {
     else if (clubIndex == 5) {
         $("#atycb").css("display", "block");
         $("#atycb_logo").css("display", "block");
+    }
+    else if (clubIndex == 6) {
+        $("#rcy").css("display", "block");
+        $("#rcy_logo").css("display", "block");
     }
 }
 
