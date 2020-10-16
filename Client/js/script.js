@@ -5,9 +5,9 @@ socket.on('connectedUsers', (data) => {
 });
 
 let clubIndex = 1;
-let clubMax = 4;
+let clubMax = 5;
 let orgIndex = 1;
-let orgMax = 12;
+let orgMax = 11;
 
 $("#club_left").click(() => {
     if (clubIndex == 1) {
@@ -42,6 +42,9 @@ $("#iheart_logo_button").click(() => {
 $("#peer_logo_button").click(() => {
     onClubClick(4);
 });
+$("#atycb_logo_button").click(()=>{
+    onClubClick(5);
+});
 function onClubClick(number) {
     clubIndex = number;
     clubShow();
@@ -56,6 +59,8 @@ function clubShow() {
     $("#iheart_logo").css("display", "none");
     $("#peer").css("display", "none");
     $("#peer_logo").css("display", "none");
+    $("#atycb").css("display", "none");
+    $("#atycb_logo").css("display", "none");
     if (clubIndex == 1) {
         $("#dance_company").css("display", "block");
         $("#dance_company_logo").css("display", "block");
@@ -71,6 +76,10 @@ function clubShow() {
     else if (clubIndex == 4) {
         $("#peer").css("display", "block");
         $("#peer_logo").css("display", "block");
+    }
+    else if (clubIndex == 5) {
+        $("#atycb").css("display", "block");
+        $("#atycb_logo").css("display", "block");
     }
 }
 
@@ -128,9 +137,6 @@ $("#css_logo_button").click(()=>{
 $("#cas_logo_button").click(()=>{
     onOrgClick(11);
 });
-$("#atycb_logo_button").click(()=>{
-    onOrgClick(12);
-});
 
 function onOrgClick(number) {
     orgIndex = number;
@@ -169,10 +175,7 @@ function orgShow() {
     $("#css_logo").css("display", "none");
 
     $("#cas").css("display", "none");
-    $("#cas_logo").css("display", "none");
-
-    $("#atycb").css("display", "none");
-    $("#atycb_logo").css("display", "none");
+    $("#cas_logo").css("display", "none");    
     
     if (orgIndex == 1) {
         $("#ceaso").css("display", "block");
@@ -217,11 +220,7 @@ function orgShow() {
     else if (orgIndex == 11) {
         $("#cas").css("display", "block");
         $("#cas_logo").css("display", "block");
-    }
-    else if (orgIndex == 12) {
-        $("#atycb").css("display", "block");
-        $("#atycb_logo").css("display", "block");
-    }
+    }    
 }
 
 // Org Buttons
